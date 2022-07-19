@@ -307,6 +307,7 @@ class CameraView(context: Context, private val frameProcessorThread: ExecutorSer
   override fun onDetachedFromWindow() {
     super.onDetachedFromWindow()
     updateLifecycleState()
+    lifecycleRegistry.currentState = Lifecycle.State.DESTROYED
   }
 
   /**
