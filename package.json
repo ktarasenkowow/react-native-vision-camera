@@ -32,6 +32,7 @@
     "lint-ci": "yarn lint -f ./node_modules/@firmnav/eslint-github-actions-formatter/dist/formatter.js",
     "build": "bob build",
     "release": "release-it",
+    "postinstall": "bob build",
     "pods": "cd example && yarn pods",
     "bootstrap": "yarn && cd example && yarn && yarn setup && yarn pods",
     "check-android": "scripts/ktlint.sh && scripts/cpplint.sh",
